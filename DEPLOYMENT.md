@@ -5,7 +5,7 @@
 Recommended repository:
 
 ```bash
-git remote add origin git@github.com:polyoraceuphoria/snowglobe.git
+git remote add origin git@github.com:polyoraceuphoria/snowglobehq.git
 git branch -M main
 git push -u origin main
 ```
@@ -13,7 +13,7 @@ git push -u origin main
 HTTPS alternative:
 
 ```bash
-git remote add origin https://github.com/polyoraceuphoria/snowglobe.git
+git remote add origin https://github.com/polyoraceuphoria/snowglobehq.git
 git branch -M main
 git push -u origin main
 ```
