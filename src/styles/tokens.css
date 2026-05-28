@@ -1,0 +1,22 @@
+:root {
+  --bg: #050708;
+  --graphite: #111418;
+  --panel: #151a20;
+  --panel-strong: #1b2129;
+  --border: #2a3038;
+  --border-soft: rgba(191, 231, 255, 0.14);
+  --snow: #f8fafc;
+  --ice: #bfe7ff;
+  --green: #9ae6b4;
+  --lavender: #d8ccff;
+  --muted: #9aa4b2;
+  --amber: #f4c76b;
+  --red: #ef4444;
+  --text: #dfe7ef;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}

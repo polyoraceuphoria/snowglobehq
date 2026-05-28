@@ -1,0 +1,409 @@
+{
+  "docs": [
+    {
+      "route": "/docs/getting-started",
+      "method": "GET",
+      "title": "Getting Started",
+      "description": "What SnowGlobe is, who uses it, and how Snow Angels should navigate the internal HQ.",
+      "group": "Overview",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "What SnowGlobe is",
+          "body": "SnowGlobe is the private internal HQ for Snow Digital Group Snow Angels: a calm operating manual for people, protocols, playbooks, and protected standards."
+        },
+        {
+          "heading": "Who uses it",
+          "body": "SnowGlobe is for approved Snow Digital Group employees, trusted operators, helpers, caregivers, and collaborators. Access is controlled outside this static app."
+        },
+        {
+          "heading": "What belongs here",
+          "body": "Internal standards, operating playbooks, handoff formats, escalation rules, changelog notes, and resource indexes belong here.",
+          "bullets": ["Company operating rhythm", "Snow Angel standards", "Client delivery playbooks", "Care and house protocols", "Emergency escalation references"]
+        },
+        {
+          "heading": "What does not belong here",
+          "body": "Do not store secrets, real private family data, medical records, addresses, phone numbers, schedules, customer data, or credentials in this V1 static portal."
+        }
+      ],
+      "response": {
+        "system": "SnowGlobe",
+        "mode": "internal_hq",
+        "access": "protected_by_cloudflare_access",
+        "directive": "#forsnow"
+      }
+    },
+    {
+      "route": "/docs/mission",
+      "method": "GET",
+      "title": "Mission",
+      "description": "The operating purpose behind SnowGlobe and the Snow Angels culture.",
+      "group": "Overview",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Snow Digital Group",
+          "body": "Snow Digital Group exists to build calm, intelligent, beautiful growth systems for clients and internal teams."
+        },
+        {
+          "heading": "SnowGlobe",
+          "body": "SnowGlobe keeps the people behind those systems aligned, protected, and operational. It is the internal memory layer for standards, handoffs, and rhythm."
+        },
+        {
+          "heading": "Operating promise",
+          "body": "Every Snow Angel should know what matters, where to find it, when to escalate, and how to leave the system cleaner than they found it."
+        }
+      ],
+      "response": {
+        "mission": "alignment_protection_operations",
+        "culture": "calm_precise_trusted",
+        "directive": "#forsnow"
+      }
+    },
+    {
+      "route": "/docs/snow-angels",
+      "method": "GET",
+      "title": "Snow Angels",
+      "description": "Definition and expectations for approved internal collaborators.",
+      "group": "Overview",
+      "version": "v0.3.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Definition",
+          "body": "Snow Angels are trusted Snow Digital Group employees, operators, approved helpers, and care collaborators who uphold the company's care, quality, and trust standards."
+        },
+        {
+          "heading": "What the role means",
+          "body": "The role is serious: protect confidentiality, communicate clearly, document cleanly, and escalate early when the situation needs authority."
+        },
+        {
+          "heading": "What the role is not",
+          "body": "Snow Angels do not improvise on safety matters, make unauthorized care decisions, speak publicly for Snow Digital Group, or access information outside their approved scope."
+        }
+      ],
+      "response": {
+        "audience": "Snow Angels",
+        "trust_model": "approved_collaborators_only",
+        "status": "active"
+      }
+    },
+    {
+      "route": "/docs/standards",
+      "method": "GET",
+      "title": "Standards",
+      "description": "The baseline behavior contract for Snow Angels.",
+      "group": "Operations",
+      "version": "v0.3.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Core standards",
+          "body": "Snow Angels work with calm authority, clean handoffs, confidentiality, punctuality, and documentation discipline.",
+          "bullets": ["Communicate calmly", "Protect confidentiality", "Arrive on time", "Document what changed", "No gossip", "No improvising on safety matters", "Escalate early"]
+        },
+        {
+          "heading": "Handoff discipline",
+          "body": "A good handoff makes the next person more capable. It records what happened, what changed, what is pending, and what needs attention."
+        },
+        {
+          "heading": "Escalation norm",
+          "body": "Early escalation is a strength. If a situation is unclear, safety-related, emotionally heated, client-sensitive, or outside scope, raise it."
+        }
+      ],
+      "response": {
+        "standard": "calm_documented_escalated",
+        "default_behavior": "clarify_before_acting",
+        "status": "active"
+      }
+    },
+    {
+      "route": "/docs/client-ops",
+      "method": "GET",
+      "title": "Client Ops",
+      "description": "Principles for communication, ownership, delivery quality, and escalation.",
+      "group": "Operations",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Communication principles",
+          "body": "Client communication should be clear, warm, scoped, and accountable. Avoid overpromising. Confirm next steps in writing."
+        },
+        {
+          "heading": "Task ownership",
+          "body": "Every task needs an owner, a desired output, a delivery moment, and an escalation path if blocked.",
+          "bullets": ["Name the owner", "Define the output", "Capture the deadline", "Flag blockers early", "Close the loop"]
+        },
+        {
+          "heading": "Delivery quality",
+          "body": "Delivery should feel polished: accurate files, clean naming, short summaries, and clear notes about assumptions or unresolved questions."
+        }
+      ],
+      "response": {
+        "client_ops": "scoped_warm_accountable",
+        "delivery_mode": "clean_handoff",
+        "status": "active"
+      }
+    },
+    {
+      "route": "/docs/care-ops",
+      "method": "GET",
+      "title": "Care Ops",
+      "description": "Non-medical care operations rules for approved caregivers and helpers.",
+      "group": "Operations",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "caution": "Care Ops is operational, not medical advice. Follow parent or guardian instructions and escalate safety concerns immediately.",
+      "sections": [
+        {
+          "heading": "Approved caregivers only",
+          "body": "Only approved caregivers and helpers may participate in care operations. No unauthorized visitors, substitutions, or unscheduled handoffs."
+        },
+        {
+          "heading": "Parent instructions control",
+          "body": "Follow parent or guardian instructions. Do not make medication, food, allergy, transport, visitor, or schedule decisions without parent or guardian approval."
+        },
+        {
+          "heading": "Future protected notes",
+          "body": "Food, allergy, schedule, and detailed care notes belong in a future protected care module, not in this static V1 content."
+        }
+      ],
+      "response": {
+        "care_ops": "approved_helpers_only",
+        "medical_boundary": "not_medical_advice",
+        "escalation": "parent_guardian_first"
+      }
+    },
+    {
+      "route": "/docs/emergency",
+      "method": "GET",
+      "title": "Emergency",
+      "description": "Immediate escalation rules for urgent situations.",
+      "group": "Safety",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "caution": "Do not delay emergency care to update SnowGlobe.",
+      "sections": [
+        {
+          "heading": "Immediate danger",
+          "body": "Call 911 first for immediate danger, breathing difficulty, serious injury, fire, suspected life-threatening emergency, or any urgent situation where waiting would be unsafe."
+        },
+        {
+          "heading": "Parent or guardian notification",
+          "body": "After emergency services are contacted and it is safe to do so, contact the parent or guardian. Do not delay urgent action to send updates."
+        },
+        {
+          "heading": "Possible poisoning",
+          "body": "For possible poisoning or exposure, use Poison Control guidance and contact the parent or guardian. In the United States, Poison Control is available at 1-800-222-1222."
+        },
+        {
+          "heading": "Incident note",
+          "body": "After urgent action is complete, document what happened, who was present, what action was taken, who was contacted, and what follow-up is needed."
+        }
+      ],
+      "response": {
+        "priority": "life_safety_first",
+        "call": ["911", "parent_or_guardian", "Poison Control when relevant"],
+        "portal_update": "after_urgent_action"
+      }
+    },
+    {
+      "route": "/docs/escalation",
+      "method": "GET",
+      "title": "Escalation",
+      "description": "When and how Snow Angels should raise issues.",
+      "group": "Safety",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Escalate early",
+          "body": "Escalate when a decision touches safety, privacy, client trust, care instructions, money, public communication, or anything outside the approved scope."
+        },
+        {
+          "heading": "Escalation format",
+          "body": "Use a concise format: situation, risk, current action, decision needed, and deadline."
+        }
+      ],
+      "response": {
+        "format": "situation_risk_action_decision_deadline",
+        "default": "escalate_when_unsure"
+      }
+    },
+    {
+      "route": "/docs/incident-notes",
+      "method": "GET",
+      "title": "Incident Notes",
+      "description": "How to document incidents after urgent action is complete.",
+      "group": "Safety",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Sequence matters",
+          "body": "Handle immediate safety first. Then document the incident. SnowGlobe notes must never slow down emergency action."
+        },
+        {
+          "heading": "What to capture",
+          "body": "Record time, location category, people present, what happened, immediate action, parent or guardian notification, emergency services if used, and follow-up needed."
+        }
+      ],
+      "response": {
+        "incident_note": "after_action",
+        "fields": ["time", "people_present", "action_taken", "follow_up"]
+      }
+    },
+    {
+      "route": "/docs/handoff",
+      "method": "GET",
+      "title": "Handoff",
+      "description": "The minimum useful handoff format for care, client, and operations work.",
+      "group": "Operations",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Minimum handoff",
+          "body": "A handoff should make the next person confident quickly.",
+          "bullets": ["Who was present", "Time in and time out", "What changed", "What was completed", "What is pending", "Incidents or blockers", "Follow-up needed"]
+        },
+        {
+          "heading": "Care-specific additions",
+          "body": "When relevant and parent-approved, include meals or bottles, nap or sleep notes, mood or behavior observations, and any parent or guardian follow-up."
+        }
+      ],
+      "response": {
+        "handoff": "clear_complete_next_action",
+        "status": "active"
+      }
+    },
+    {
+      "route": "/docs/changelog",
+      "method": "GET",
+      "title": "Docs Changelog",
+      "description": "How SnowGlobe docs changes are versioned and communicated.",
+      "group": "System",
+      "version": "v0.2.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "sections": [
+        {
+          "heading": "Versioning",
+          "body": "SnowGlobe docs use simple semantic versions for major internal changes, new sections, and launch-ready releases."
+        },
+        {
+          "heading": "Change discipline",
+          "body": "Every meaningful update should explain what changed, why it matters, and whether Snow Angels need to adjust behavior."
+        }
+      ],
+      "response": {
+        "versioning": "semantic_internal",
+        "latest": "v1.0.0"
+      }
+    }
+  ],
+  "playbooks": [
+    {
+      "route": "/playbooks/client-delivery",
+      "title": "Client Delivery",
+      "description": "A practical delivery rhythm for small Snow Digital projects.",
+      "owner": "Snow Digital Group",
+      "version": "v0.1.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "steps": ["Confirm scope and output.", "Name the owner and due date.", "Do the work in the cleanest available format.", "Review assumptions and unresolved questions.", "Deliver with a short summary and next step."]
+    },
+    {
+      "route": "/playbooks/house-standards",
+      "title": "House Standards",
+      "description": "Calm, clean, respectful standards for shared spaces and trusted helpers.",
+      "owner": "Snow Digital Group",
+      "version": "v0.1.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "steps": ["Arrive prepared.", "Respect privacy.", "Leave spaces cleaner than found.", "Document anything unusual.", "Escalate safety or access issues immediately."]
+    },
+    {
+      "route": "/playbooks/snow-care",
+      "title": "Snow Care",
+      "description": "A non-medical care operations starter for approved caregivers only.",
+      "owner": "Snow Digital Group",
+      "version": "v0.1.0",
+      "status": "protected",
+      "updated": "2026-05-28",
+      "steps": ["Follow parent or guardian instructions.", "Use only approved routines.", "Do not make medication decisions.", "No unauthorized visitors.", "Escalate unclear safety questions."]
+    },
+    {
+      "route": "/playbooks/communications",
+      "title": "Communications",
+      "description": "How Snow Angels communicate with clarity and calm.",
+      "owner": "Snow Digital Group",
+      "version": "v0.1.0",
+      "status": "active",
+      "updated": "2026-05-28",
+      "steps": ["Be brief and specific.", "Name the decision needed.", "Avoid gossip or speculation.", "Confirm next steps.", "Close the loop."]
+    }
+  ],
+  "resources": [
+    {
+      "route": "/resources/brand-assets",
+      "title": "Brand Assets",
+      "description": "Index for approved logos, visual assets, and templates once protected asset storage is ready.",
+      "kind": "asset_index",
+      "status": "draft"
+    },
+    {
+      "route": "/resources/templates",
+      "title": "Templates",
+      "description": "Reusable handoff, client update, incident note, and checklist templates.",
+      "kind": "template_index",
+      "status": "active"
+    },
+    {
+      "route": "/resources/checklists",
+      "title": "Checklists",
+      "description": "Simple operational checklists for Snow Angels.",
+      "kind": "checklist_index",
+      "status": "active"
+    }
+  ],
+  "changelog": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-05-28",
+      "title": "SnowGlobe initialized",
+      "notes": ["Standalone Vite app planned as the internal HQ for Snow Angels."]
+    },
+    {
+      "version": "v0.2.0",
+      "date": "2026-05-28",
+      "title": "Docs shell created",
+      "notes": ["API-docs navigation, endpoint pages, JSON blocks, and internal-use notice added."]
+    },
+    {
+      "version": "v0.3.0",
+      "date": "2026-05-28",
+      "title": "Snow Angels standards added",
+      "notes": ["Standards, Snow Angels definition, care boundaries, and escalation language seeded."]
+    },
+    {
+      "version": "v1.0.0",
+      "date": "2026-05-28",
+      "title": "Protected HQ launch candidate",
+      "notes": ["Ready for private Cloudflare Pages deployment behind Cloudflare Access."]
+    }
+  ]
+}
