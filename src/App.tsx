@@ -9,6 +9,7 @@ import { SnowGlobeShell } from "./components/layout/SnowGlobeShell";
 import { ChangelogEntry } from "./components/status/ChangelogEntry";
 import type { EndpointPage, Playbook, Resource } from "./content/types";
 import { content, findDoc, findPlaybook, findResource, homeEndpointCards, normalizePath } from "./lib/content";
+import { appHref } from "./lib/routes";
 
 function routePath() {
   const basePath = new URL(import.meta.env.BASE_URL, window.location.origin).pathname;
@@ -34,8 +35,8 @@ function Dashboard() {
             Internal docs, care standards, operating playbooks, and protected protocols - organized like an API, built for people.
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="/docs/getting-started">GET /getting-started</a>
-            <a className="secondary-action" href="/status">View system status</a>
+            <a className="primary-action" href={appHref("/docs/getting-started")}>GET /getting-started</a>
+            <a className="secondary-action" href={appHref("/status")}>View system status</a>
           </div>
         </div>
         <JsonBlock
@@ -256,7 +257,7 @@ function NotFound() {
         <p className="eyebrow">404</p>
         <h1>Endpoint not found.</h1>
         <p>This SnowGlobe route is not initialized yet.</p>
-        <a className="primary-action" href="/">Return to dashboard</a>
+        <a className="primary-action" href={appHref("/")}>Return to dashboard</a>
       </div>
     </section>
   );
