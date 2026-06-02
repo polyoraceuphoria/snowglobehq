@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { appHref } from "../../lib/routes";
 import { searchSnowGlobe } from "../../lib/search";
 
 export function SearchOverlay() {
@@ -28,7 +29,7 @@ export function SearchOverlay() {
       />
       <div className="search-results">
         {results.map((item) => (
-          <a href={item.route} key={item.route}>
+          <a href={appHref(item.route)} key={item.route}>
             <span>{item.label}</span>
             <strong>{item.title}</strong>
             <em>{item.group}</em>
