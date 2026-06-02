@@ -28,6 +28,12 @@ Recommended Cloudflare Pages settings:
 - Output directory: `dist`
 - Custom domain: `snowglobe.snowdigitalgroup.com`
 
+Staging:
+
+- GitHub Pages URL: `https://polyoraceuphoria.github.io/snowglobehq/`
+- Workflow: `.github/workflows/pages.yml`
+- CI/CD notes: `docs/CI_CD_PIPELINE.md`
+
 ## Access Control
 
 SnowGlobe includes a soft staging code gate for public-safe development previews. This gate is only for casual staging access and is not a security boundary because static frontend code is visible to the browser.
