@@ -31,6 +31,23 @@ Build output directory: dist
 Custom domain: snowglobe.snowdigitalgroup.com
 ```
 
+## GitHub Pages Staging
+
+Temporary public-safe staging is handled by GitHub Actions:
+
+```txt
+Workflow: .github/workflows/pages.yml
+URL: https://polyoraceuphoria.github.io/snowglobehq/
+Build command: VITE_BASE_PATH=/snowglobehq/ npm run build
+Output directory: dist
+```
+
+In GitHub, set:
+
+```txt
+Settings -> Pages -> Build and deployment -> Source: GitHub Actions
+```
+
 ## Subdomain DNS
 
 After `snowdigitalgroup.com` DNS is managed in Cloudflare, connect:
