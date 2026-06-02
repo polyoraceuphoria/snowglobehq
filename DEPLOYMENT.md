@@ -31,6 +31,16 @@ Build output directory: dist
 Custom domain: snowglobe.snowdigitalgroup.com
 ```
 
+## Subdomain DNS
+
+After `snowdigitalgroup.com` DNS is managed in Cloudflare, connect:
+
+```txt
+snowglobe.snowdigitalgroup.com -> snowglobe Pages project
+```
+
+If DNS remains in Squarespace temporarily, add a CNAME for `snowglobe` pointing to the active Pages hostname. Keep the app public-safe until Cloudflare Access is active.
+
 ## Cloudflare Access
 
 Before inviting Snow Angels, create a Cloudflare Access application for:
@@ -40,6 +50,8 @@ snowglobe.snowdigitalgroup.com/*
 ```
 
 Allow only approved Snow Digital Group users and trusted collaborators.
+
+The frontend Snow Angel code gate is only a staging convenience and should not replace Cloudflare Access.
 
 ## Direct Upload Option
 

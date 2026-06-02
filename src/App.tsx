@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { EndpointCard } from "./components/cards/EndpointCard";
 import { PlaybookCard } from "./components/cards/PlaybookCard";
 import { ResourceGrid } from "./components/cards/ResourceGrid";
@@ -5,6 +6,7 @@ import { SystemCard } from "./components/cards/SystemCard";
 import { EndpointHeader } from "./components/docs/EndpointHeader";
 import { JsonBlock } from "./components/docs/JsonBlock";
 import { MethodBadge, StatusBadge, VersionBadge } from "./components/docs/Badges";
+import { hasSnowAngelAccess, SnowAngelGate } from "./components/layout/SnowAngelGate";
 import { SnowGlobeShell } from "./components/layout/SnowGlobeShell";
 import { ChangelogEntry } from "./components/status/ChangelogEntry";
 import type { EndpointPage, Playbook, Resource } from "./content/types";
@@ -211,6 +213,7 @@ function StatusPage() {
             app: "SnowGlobe",
             app_status: "active",
             deployment: "static_pages_ready",
+            local_gate: "active_staging_only",
             auth_boundary: "cloudflare_access_required",
             secrets_in_frontend: false
           }}
@@ -219,6 +222,7 @@ function StatusPage() {
       <div className="status-grid">
         {[
           ["Static app", "active"],
+          ["Snow Angel code gate", "staging"],
           ["Content validation", "active"],
           ["Cloudflare Access", "required"],
           ["Database", "not_in_v1"]
@@ -284,6 +288,8 @@ function renderRoute(path: string) {
 }
 
 export default function App() {
+  const [accessGranted, setAccessGranted] = useState(hasSnowAngelAccess);
   const path = routePath();
+  if (!accessGranted) return <SnowAngelGate onUnlock={() => setAccessGranted(true)} />;
   return <SnowGlobeShell activePath={path}>{renderRoute(path)}</SnowGlobeShell>;
 }

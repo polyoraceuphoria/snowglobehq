@@ -30,13 +30,19 @@ Recommended Cloudflare Pages settings:
 
 ## Access Control
 
-SnowGlobe does not include app-level authentication in V1. Protect the full subdomain with Cloudflare Access before inviting approved Snow Angels.
+SnowGlobe includes a soft staging code gate for public-safe development previews. This gate is only for casual staging access and is not a security boundary because static frontend code is visible to the browser.
+
+Protect the full subdomain with Cloudflare Access before inviting approved Snow Angels or adding real internal data.
 
 Recommended Access application:
 
 - Application domain: `snowglobe.snowdigitalgroup.com`
 - Path: `/*`
 - Policy: allow approved Snow Digital Group users only
+
+Current staging code:
+
+- Snow Angel access code: `welovesnow999`
 
 ## Content Editing
 
